@@ -1,6 +1,7 @@
 use anyhow::{Context, Result, bail};
 use reqwest::blocking::Client;
 use serde_json::Value;
+use std::time::Duration;
 
 pub struct PplxClient {
     client: Client,
@@ -11,10 +12,11 @@ impl PplxClient {
     pub fn new() -> Result<Self> {
         let api_key = std::env::var("PERPLEXITY_API_KEY")
             .context("PERPLEXITY_API_KEY not set. Add it to ~/.secrets")?;
-        Ok(Self {
-            client: Client::new(),
-            api_key,
-        })
+        let client = Client::builder()
+            .timeout(Duration::from_secs(300))
+            .build()
+            .context("Failed to build HTTP client")?;
+        Ok(Self { client, api_key })
     }
 
     pub fn query(&self, model: &str, query: &str) -> Result<Value> {
