@@ -1,1 +1,0 @@
-/Users/terry/code/pplx/target/debug/pplx: /Users/terry/code/pplx/target/package/compound-perplexity-0.1.0/src/client.rs /Users/terry/code/pplx/target/package/compound-perplexity-0.1.0/src/display.rs /Users/terry/code/pplx/target/package/compound-perplexity-0.1.0/src/log.rs /Users/terry/code/pplx/target/package/compound-perplexity-0.1.0/src/main.rs
