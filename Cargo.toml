@@ -1,6 +1,6 @@
 [package]
 name = "compound-perplexity"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 description = "CLI for the Perplexity API — search, ask, research, and reason from your terminal."
 license = "MIT"
@@ -10,7 +10,7 @@ keywords = ["perplexity", "ai", "search", "cli"]
 categories = ["command-line-utilities"]
 
 [[bin]]
-name = "pplx"
+name = "compound-pplx"
 path = "src/main.rs"
 
 [dependencies]

@@ -8,18 +8,18 @@ CLI for the Perplexity API. Search, ask, research, and reason from your terminal
 cargo install compound-perplexity
 ```
 
-The binary is called `pplx`.
+The binary is called `compound-pplx`.
 
 ## Commands
 
 | Command | What it does | Model | Est. cost |
 |---------|-------------|-------|-----------|
-| `pplx search <query>` | Quick web search | sonar | ~$0.006 |
-| `pplx ask <query>` | Pro search with analysis | sonar-pro | ~$0.01 |
-| `pplx research <query>` | Deep research | sonar-deep-research | ~$0.40 |
-| `pplx reason <query>` | Reasoning with thinking | sonar-reasoning-pro | ~$0.01 |
-| `pplx log` | Show recent queries | — | — |
-| `pplx log --stats` | Usage and cost breakdown | — | — |
+| `compound-pplx search <query>` | Quick web search | sonar | ~$0.006 |
+| `compound-pplx ask <query>` | Pro search with analysis | sonar-pro | ~$0.01 |
+| `compound-pplx research <query>` | Deep research | sonar-deep-research | ~$0.40 |
+| `compound-pplx reason <query>` | Reasoning with thinking | sonar-reasoning-pro | ~$0.01 |
+| `compound-pplx log` | Show recent queries | — | — |
+| `compound-pplx log --stats` | Usage and cost breakdown | — | — |
 
 ## Features
 

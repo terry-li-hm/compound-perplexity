@@ -7,7 +7,7 @@ mod log;
 
 #[derive(Parser)]
 #[command(
-    name = "pplx",
+    name = "compound-pplx",
     version,
     about = "Perplexity API CLI — search, ask, research, and reason from your terminal"
 )]

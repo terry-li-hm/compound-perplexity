@@ -1,0 +1,28 @@
+[package]
+name = "pplx"
+version = "0.1.0"
+edition = "2024"
+description = "CLI for the Perplexity API — search, ask, research, and reason from your terminal."
+license = "MIT"
+repository = "https://github.com/terry-li-hm/pplx"
+homepage = "https://github.com/terry-li-hm/pplx"
+keywords = ["perplexity", "ai", "search", "cli"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "pplx"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+owo-colors = "4"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+strip = true
+lto = true
