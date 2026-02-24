@@ -1,6 +1,14 @@
-# pplx
+# compound-perplexity
 
 CLI for the Perplexity API. Search, ask, research, and reason from your terminal.
+
+## Install
+
+```bash
+cargo install compound-perplexity
+```
+
+The binary is called `pplx`.
 
 ## Commands
 
@@ -20,12 +28,6 @@ CLI for the Perplexity API. Search, ask, research, and reason from your terminal
 - **Cost tracking** — every query logged with timestamp, model, estimated cost, and duration
 - **Color-coded output** — each mode has a distinct colour for easy scanning
 - **`--raw`** flag for JSON output, **`--no-log`** to skip history
-
-## Install
-
-```bash
-cargo install --path .
-```
 
 Requires `PERPLEXITY_API_KEY` in your environment.
 
