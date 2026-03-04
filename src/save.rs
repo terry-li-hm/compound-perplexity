@@ -16,16 +16,7 @@ fn slugify(query: &str) -> String {
         .filter(|s| !s.is_empty())
         .collect::<Vec<_>>()
         .join("-");
-    // Truncate to 60 chars at a word boundary
-    if slug.len() <= 80 {
-        slug
-    } else {
-        let truncated = &slug[..80];
-        match truncated.rfind('-') {
-            Some(pos) => truncated[..pos].to_string(),
-            None => truncated.to_string(),
-        }
-    }
+    slug
 }
 
 fn save_dir() -> Result<PathBuf> {
